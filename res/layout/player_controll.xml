@@ -1,0 +1,71 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#88000000" >
+    
+    <Button 
+          android:id="@+id/bt_play"
+          android:layout_width="45dp"
+          android:layout_height="45dp"
+          android:layout_weight="0"
+          android:layout_gravity="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="3dp"
+          android:background="@drawable/play"
+            />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        >
+         <SeekBar
+           android:id="@+id/seekBar"
+           style="?android:attr/seekBarStyle"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"/>
+         <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:orientation="horizontal">
+             <TextView 
+                android:id="@+id/currentTime"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"  
+                android:textSize="14sp"
+                android:textColor="#CECECE"
+                android:gravity="left"
+                android:text="00:00"
+                 />
+              <TextView 
+                android:id="@+id/totalTime"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"  
+                android:textSize="14sp"
+                android:textColor="#CECECE"
+                android:gravity="right"
+                android:text="00:00"
+                 />
+         </LinearLayout>
+         
+    </LinearLayout>
+    
+    <Button 
+          android:id="@+id/bt_showmode"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_weight="0"
+          android:layout_gravity="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/full_screen" 
+          />
+
+</LinearLayout>
+
+

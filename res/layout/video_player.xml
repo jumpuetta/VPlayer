@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+    
+    <SurfaceView 
+       android:id="@+id/surfaceView"
+       android:layout_centerInParent="true"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       />
+    
+    <ImageButton
+       android:id="@+id/bt_center_play"
+       android:layout_centerInParent="true"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:background="@drawable/center_play"
+       android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:background="#88000000"
+        android:gravity="center"
+        android:textColor="#CECECE"
+        android:textSize="20sp" />
+
+   <com.android.vplayer.VideoControllLayout
+       android:id="@+id/controllView"
+       android:layout_width="match_parent"
+       android:layout_height="50dip"
+       android:layout_alignParentBottom="true"
+    />
+    
+   <TextView 
+      android:id="@+id/seekbar_indicator"
+      android:layout_above="@id/controllView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:background="#aa000000" 
+      android:padding="4dp"
+      android:textSize="18sp"
+      android:textColor="#CECECE"
+      android:visibility="gone"
+      android:text="00:00" />
+       
+</RelativeLayout>
